@@ -1,0 +1,65 @@
+---
+title: "econ-program-usage-data"
+author: "Patrick Baylis"
+date: "October 10, 2018"
+output: 
+  html_document: 
+    keep_md: yes
+    self_contained: no
+---
+
+```{r setup, include=FALSE, echo=FALSE, message=FALSE, error=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+packages <- c("dataMaid","readr","rmarkdown")
+is_installed <- function(mypkg) is.element(mypkg, installed.packages()[,1])
+load_or_install<-function(package_names)
+{
+  for(package_name in package_names)
+  {
+    if(!is_installed(package_name))
+    {
+       install.packages(package_name,repos="http://lib.stat.cmu.edu/R/CRAN")
+    }
+    library(package_name,character.only=TRUE,quietly=TRUE,verbose=FALSE)
+  }
+}
+# calling our two functions:
+load_or_install(packages)
+```
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1453555.svg)](https://doi.org/10.5281/zenodo.1453555)
+
+## Citation
+Cite as
+
+```
+Patrick Baylis, & Paul Schrimpf. (2018).
+pbaylis/econ-program-usage-data: 
+First release of data (AER only) (Version v1.0.0). 
+Zenodo. http://doi.org/10.5281/zenodo.1453556
+```
+## Description
+Software usage in AEA supplements, based on file extension.
+
+This release only has data on the AER.
+
+## Data description
+```{r read_data, echo= FALSE,warning=FALSE,message=FALSE}
+articles_programs_used <- read_csv("articles_programs_used.csv")
+```
+```{r mkreport, message=FALSE, warning=FALSE, include=FALSE}
+makeDataReport(articles_programs_used,
+			   replace=TRUE,
+			   clean=FALSE,
+			   openResult = FALSE,
+			   codebook = TRUE,
+			   file="codebook_articles_programs_used.Rmd")
+render("codebook_articles_programs_used.Rmd",clean = FALSE)
+```
+
+See  [codebook_articles_programs_used.pdf](codebook_articles_programs_used.pdf) and  [codebook_articles_programs_used.utf8.md](codebook_articles_programs_used.utf8.md) for data description.
+
+
+## Sample graph
+(no code)
+![sample graph](aer_programs_by_year.png)
