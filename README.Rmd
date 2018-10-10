@@ -10,7 +10,7 @@ output:
 
 ```{r setup, include=FALSE, echo=FALSE, message=FALSE, error=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-packages <- c("dataMaid","readr","rmarkdown")
+packages <- c("dataMaid","readr")
 is_installed <- function(mypkg) is.element(mypkg, installed.packages()[,1])
 load_or_install<-function(package_names)
 {
@@ -54,10 +54,9 @@ makeDataReport(articles_programs_used,
 			   openResult = FALSE,
 			   codebook = TRUE,
 			   file="codebook_articles_programs_used.Rmd")
-render("codebook_articles_programs_used.Rmd",clean = FALSE)
 ```
 
-See  [codebook_articles_programs_used.pdf](codebook_articles_programs_used.pdf) and  [codebook_articles_programs_used.utf8.md](codebook_articles_programs_used.utf8.md) for data description.
+See  [codebook_articles_programs_used.pdf](codebook_articles_programs_used.pdf)  for data description.
 
 
 ## Sample graph

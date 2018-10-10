@@ -30,7 +30,7 @@ This release only has data on the AER.
 
 
 
-See  [codebook_articles_programs_used.pdf](codebook_articles_programs_used.pdf) and  [codebook_articles_programs_used.utf8.md](codebook_articles_programs_used.utf8.md) for data description.
+See  [codebook_articles_programs_used.pdf](codebook_articles_programs_used.pdf)  for data description.
 
 
 ## Sample graph
