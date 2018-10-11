@@ -10,7 +10,7 @@ output:
 
 
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1453555.svg)](https://doi.org/10.5281/zenodo.1453555)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1456185.svg)](https://doi.org/10.5281/zenodo.1456185)
 
 ## Citation
 Cite as
@@ -18,8 +18,8 @@ Cite as
 ```
 Patrick Baylis, & Paul Schrimpf. (2018).
 pbaylis/econ-program-usage-data: 
-First release of data (AER only) (Version v1.0.0). 
-Zenodo. http://doi.org/10.5281/zenodo.1453556
+First release of data (AER only) (Version v1.0.1). 
+Zenodo. https://zenodo.org/record/1456185
 ```
 ## Description
 Software usage in AEA supplements, based on file extension.
@@ -31,7 +31,6 @@ This release only has data on the AER.
 
 
 See  [codebook_articles_programs_used.pdf](codebook_articles_programs_used.pdf)  for data description.
-
 
 ## Sample graph
 (no code)
