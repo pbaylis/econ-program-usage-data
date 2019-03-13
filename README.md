@@ -35,3 +35,5 @@ See  [codebook_articles_programs_used.pdf](codebook_articles_programs_used.pdf) 
 ## Sample graph
 (no code)
 ![sample graph](aer_programs_by_year.png)
+
+![](software-all-time.png)
